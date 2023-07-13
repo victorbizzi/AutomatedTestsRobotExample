@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230713 16:20:23.088" rpa="false" schemaversion="3">
+<suite id="s1" name="UI Tests" source="c:\AutTestDemo\tests\UI_Tests.robot">
+<test id="s1-t1" name="1.1.1 - Valid Login" line="24">
+<kw name="Open Saucedemo URL" library="Keywords">
+<kw name="Open Browser">
+<arg>${URL_SauceDemo_QA}</arg>
+<arg>${Browser}</arg>
+<msg timestamp="20230713 16:20:23.296" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230713 16:20:23.296" endtime="20230713 16:20:23.297"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20230713 16:20:23.300" endtime="20230713 16:20:23.300"/>
+</kw>
+<status status="FAIL" starttime="20230713 16:20:23.293" endtime="20230713 16:20:23.300"/>
+</kw>
+<kw name="Verify Correct URL" library="Keywords">
+<status status="NOT RUN" starttime="20230713 16:20:23.301" endtime="20230713 16:20:23.301"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>${UserNameTxt}</arg>
+<status status="NOT RUN" starttime="20230713 16:20:23.303" endtime="20230713 16:20:23.304"/>
+</kw>
+<kw name="Input Text">
+<arg>${UserNameTxt}</arg>
+<arg>${standarduser}</arg>
+<status status="NOT RUN" starttime="20230713 16:20:23.307" endtime="20230713 16:20:23.308"/>
+</kw>
+<kw name="Input Text">
+<arg>${PasswordTxt}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20230713 16:20:23.311" endtime="20230713 16:20:23.311"/>
+</kw>
+<kw name="Click button">
+<arg>${LoginBtn}</arg>
+<status status="NOT RUN" starttime="20230713 16:20:23.314" endtime="20230713 16:20:23.314"/>
+</kw>
+<kw name="Wait Until Element Is Visible">
+<arg>${SwagLabsLbl}</arg>
+<status status="NOT RUN" starttime="20230713 16:20:23.317" endtime="20230713 16:20:23.317"/>
+</kw>
+<kw name="Element Text Should Be">
+<arg>${SwagLabsLbl}</arg>
+<arg>Swag Labs</arg>
+<status status="NOT RUN" starttime="20230713 16:20:23.319" endtime="20230713 16:20:23.319"/>
+</kw>
+<kw name="Element Text Should Be">
+<arg>${ProducsSwagLabsLbl}</arg>
+<arg>Products</arg>
+<status status="NOT RUN" starttime="20230713 16:20:23.322" endtime="20230713 16:20:23.323"/>
+</kw>
+<kw name="Finish TC" library="Keywords">
+<status status="NOT RUN" starttime="20230713 16:20:23.324" endtime="20230713 16:20:23.325"/>
+</kw>
+<status status="FAIL" starttime="20230713 16:20:23.292" endtime="20230713 16:20:23.327">No keyword with name 'Open Browser' found.</status>
+</test>
+<doc>Executable file for Regression Testing</doc>
+<status status="FAIL" starttime="20230713 16:20:23.094" endtime="20230713 16:20:23.329"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="UI Tests">UI Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230713 16:20:23.120" level="ERROR">Error in file 'c:\AutTestDemo\tests\UI_Tests.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.138" level="ERROR">Error in file 'c:\AutTestDemo\tests\UI_Tests.robot' on line 7: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.145" level="ERROR">Error in file 'c:\AutTestDemo\tests\UI_Tests.robot' on line 8: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.162" level="ERROR">Error in file 'c:\AutTestDemo\settings\UserAccess.robot' on line 5: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.169" level="ERROR">Error in file 'c:\AutTestDemo\pageobjects\LoginPagePO.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.177" level="ERROR">Error in file 'c:\AutTestDemo\settings\Environments.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.229" level="ERROR">Error in file 'c:\AutTestDemo\settings\Keywords.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.236" level="ERROR">Error in file 'c:\AutTestDemo\settings\Keywords.robot' on line 7: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.246" level="ERROR">Error in file 'c:\AutTestDemo\settings\Keywords.robot' on line 8: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.258" level="ERROR">Error in file 'c:\AutTestDemo\pageobjects\HomePagePO.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.266" level="ERROR">Error in file 'c:\AutTestDemo\pageobjects\CartPagePO.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.277" level="ERROR">Error in file 'c:\AutTestDemo\pageobjects\CheckoutPagePO.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20230713 16:20:23.284" level="ERROR">Error in file 'c:\AutTestDemo\pageobjects\CheckoutCompletedPagePO.robot' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  C:\AutTestDemo
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\VictorMelo\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\python39.zip
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\DLLs
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e
+  c:\ProgramData\robocorp\ht
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\win32\lib
+  c:\ProgramData\robocorp\ht\8c875fe_b1f3c24_f8170f6e\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
