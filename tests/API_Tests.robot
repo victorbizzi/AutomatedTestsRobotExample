@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Executable file for Regression Testing
+Documentation       Executable file for API Regression Testing
 Library             BuiltIn
 Library             SeleniumLibrary
 Library             OperatingSystem
