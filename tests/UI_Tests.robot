@@ -7,6 +7,7 @@ Library             DateTime
 Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
+Library             PlaywrightLibrary
 Resource            ../settings/UserAccess.robot
 Resource            ../pageobjects/LoginPagePO.robot
 Resource            ../settings/Environments.robot
@@ -79,6 +80,18 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Element Should Be Visible           ${XIconPassword}
     Finish TC
 
+1.1.6 - Example running Headless
+    Go in Headless
+    Maximize Browser Window
+    Wait Until Element Is Visible       ${UserNameTxt}
+    Input Text                          ${UserNameTxt}          ${standarduser}
+    Input Text                          ${PasswordTxt}          ${password}
+    Click button                        ${LoginBtn}
+    Wait Until Element Is Visible       ${SwagLabsLbl}  
+    Element Text Should Be              ${SwagLabsLbl}          Swag Labs
+    Element Text Should Be              ${ProducsSwagLabsLbl}          Products
+    Finish TC
+
 2.1.1 - Add product to Cart and finish with positive Purchase flow
     Valid Login
     Wait Until Element Is Visible       ${fristProductAddBtn}     
@@ -105,6 +118,8 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     END 
     Click Element                        ${FinishCheckoutBtn}     
     Validate Checkout Successfully
+    Finish TC
+
 
 
 

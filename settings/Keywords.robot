@@ -24,14 +24,18 @@ ${random_number}    Random Integer    1    100
 Finish TC
     SeleniumLibrary.Execute JavaScript                  window.localStorage.clear()
     SeleniumLibrary.Close Browser
-
-Verify Correct URL
 	
-
 Open Saucedemo URL
     #Create Webdriver    Chrome      executable_path=../settings/chromedriver.exe
     #Go To               ${URL_SauceDemo_QA}   
     Open Browser         ${URL_SauceDemo_QA}        ${Browser}
+    Maximize Browser Window
+
+Go in Headless
+    ${options}      Evaluate        sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    Call Method    ${options}    add_argument    --headless
+    Create Webdriver    Chrome    chrome_options=${options}
+    Go To   ${URL_SauceDemo_QA}        
     Maximize Browser Window
 
 Valid Login
