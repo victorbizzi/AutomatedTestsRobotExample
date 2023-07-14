@@ -8,7 +8,7 @@ Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
 Resource            ../settings/UserAccess.robot
-Resource            ../pageobjects/LoginPagePO.robot
+Resource            ../pageobjects/LoginPagePO.robotgi
 Resource            ../settings/Environments.robot
 Resource            ../settings/Keywords.robot
 Resource            ../pageobjects/HomePagePO.robot

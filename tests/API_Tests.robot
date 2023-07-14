@@ -14,6 +14,16 @@ Resource            ../settings/Endpoints.robot
 *** Variables ***
 
 
+*** Comments ***
+The following Tests does not work. I created the Steps just to show how I develop the Automated API Tests
+The context is: in UI, when the user insert the username and Password, the following screen has a "2 Authentication Factor"
+ - The user can choose if he/she wants to receive the PIN via Email or SMS
+ - After this step, the user needs to type the PIN in Textbox to validate
+ - It is a real situation that I already faced. After talking with the Manager, we reached 2 options:
+       1 - Insert a Standard PIN for TestAutomation user
+       2 - Send the PIN in Response (by security it happens just in QA environment. In PROD when the user press F12 and go to Network -> Response, the PIN in returns "null" ["pin":null]) 
+To make the Tests more real, we decided the seccond option
+
 *** Test Cases ***
 1.1.1 API - validate-pin - Valid PIN
     #Request to auth and get the Access Token
@@ -26,7 +36,7 @@ Resource            ../settings/Endpoints.robot
     ${accessToken}=    Get Value From Json    ${json}    $.data..accessToken
     ${AaccessToken}       Set Variable       ${accessToken[0]}
     Log    The Access Token is: ${accessToken[0]}
-    #Request to send a PIN via SMS message
+    #Request to send a PIN via SMS message and save it in a variable
     Create Session    auth    ${base_url}     verify=${True}
     ${newheaders}=    Create Dictionary    Content-Type=application/json            Authorization=Bearer ${AaccessToken}
     ${Ndata}=    Create Dictionary               factor=SMS

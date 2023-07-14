@@ -7,13 +7,6 @@ Library             DateTime
 Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
-#Resource            ../settings/Environments.robot
-#Resource            ../pageobjects/LoginPagePO.robot
-#Resource            ../pageobjects/HomePagePO.robot
-#Resource            ../settings/UserAccess.robot
-#Resource            ../pageobjects/CartPagePO.robot
-#Resource            ../pageobjects/CheckoutPagePO.robot
-#Resource            ../pageobjects/CheckoutCompletedPagePO.robot
 
 *** Variables ***
 ${random_number}    Random Integer    1    100
