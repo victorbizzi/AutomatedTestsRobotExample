@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Executable file for Regression Testing
+Documentation       Executable file for UI Regression Testing
 Library             BuiltIn
 Library             SeleniumLibrary
 Library             OperatingSystem
@@ -8,7 +8,7 @@ Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
 Resource            ../settings/UserAccess.robot
-Resource            ../pageobjects/LoginPagePO.robot
+Resource            ../pageobjects/LoginPagePO.robotgi
 Resource            ../settings/Environments.robot
 Resource            ../settings/Keywords.robot
 Resource            ../pageobjects/HomePagePO.robot
