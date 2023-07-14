@@ -8,14 +8,7 @@ Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
 Resource            ../settings/UserAccess.robot
-Resource            ../pageobjects/LoginPagePO.robot
-Resource            ../settings/Environments.robot
 Resource            ../settings/Keywords.robot
-Resource            ../pageobjects/HomePagePO.robot
-Resource            ../settings/UserAccess.robot
-Resource            ../pageobjects/CartPagePO.robot
-Resource            ../pageobjects/CheckoutPagePO.robot
-Resource            ../pageobjects/CheckoutCompletedPagePO.robot
 Resource            ../settings/Endpoints.robot
 
 *** Variables ***
@@ -38,7 +31,7 @@ Resource            ../settings/Endpoints.robot
     ${newheaders}=    Create Dictionary    Content-Type=application/json            Authorization=Bearer ${AaccessToken}
     ${Ndata}=    Create Dictionary               factor=SMS
     Log    ${AaccessToken}
-    ${Nresponse}=    POST On Session    auth    ${send-pin_url}    json=${Ndata}   headers=${newheaders}
+    ${Nresponse}=    POST On Session    auth    ${sendpin_url}    json=${Ndata}   headers=${newheaders}
     ${Njson}=    Set Variable    ${Nresponse.json()}
     Log    Resposta JSON: ${Njson}
     ${valueData}=    Get Value From Json    ${Njson}    $.data.pin
@@ -48,7 +41,30 @@ Resource            ../settings/Endpoints.robot
     Create Session    auth    ${base_url}     verify=${True}
     ${Vheaders}=     Create Dictionary    Content-Type=application/json          Authorization=Bearer ${AaccessToken}
     ${Vdata}=    Create Dictionary    pin=${valueData[0]}   
-    ${Vresponse}=    POST On Session    auth    ${validate-pin}     json=${Vdata}    headers=${Vheaders}
+    ${Vresponse}=    POST On Session    auth    ${validatepin_url}     json=${Vdata}    headers=${Vheaders}
     ${Rjson}=    Set Variable    ${response.json()}
     Log    Resposta JSON: ${Rjson}
+    RequestsLibrary.Status Should Be    200
+
+2.1.1 - Create New User and Drop
+    Create Session    auth    ${base_url}     verify=${True}
+    ${headers}=     Create Dictionary    Content-Type=application/json
+    ${data}=    Create Dictionary    username=${ApiValidUserEmail}    password=${ApiValidUserPassword}
+    ${response}=    POST On Session    auth    ${auth_url}     json=${data}    headers=${headers}
+    ${json}=    Set Variable    ${response.json()}
+    ${accessToken}=    Get Value From Json    ${json}    $.data..accessToken
+    ${AaccessToken}       Set Variable       ${accessToken[0]}
+    
+    Create Session    auth    ${base_url}     verify=${True}
+    ${TCheaders}=     Create Dictionary    Content-Type=application/json    Authorization=Bearer ${AaccessToken}
+    ${TCdata}=    Evaluate     {'name': 'Auto Created', 'data': {'position': '2', 'contracttype': '1'}} 
+    ${TCresponse}=    POST On Session    auth    ${createUser_url}     json=${TCdata}    headers=${TCheaders}
+    ${TCjson}=    Set Variable    ${TCresponse.json()}
+    ${iDCreated}=    Set Variable    ${TCjson['info']['id']}
+    Log To Console    The user ID is: ${iDCreated}
+    RequestsLibrary.Status Should Be    200
+
+    ${TCDheaders}=    Create Dictionary    Content-Type=application/json         Authorization=Bearer ${AaccessToken}
+    ${payload}=       Evaluate    [{'id': ${iDCreated}}]
+    ${TCDresponse}=   Delete On Session    auth    ${deleteuser_url}    json=${payload}    headers=${TCDheaders}
     RequestsLibrary.Status Should Be    200

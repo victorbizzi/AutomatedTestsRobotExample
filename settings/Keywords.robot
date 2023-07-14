@@ -7,13 +7,13 @@ Library             DateTime
 Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
-Resource            ../settings/Environments.robot
-Resource            ../pageobjects/LoginPagePO.robot
-Resource            ../pageobjects/HomePagePO.robot
-Resource            ../settings/UserAccess.robot
-Resource            ../pageobjects/CartPagePO.robot
-Resource            ../pageobjects/CheckoutPagePO.robot
-Resource            ../pageobjects/CheckoutCompletedPagePO.robot
+#Resource            ../settings/Environments.robot
+#Resource            ../pageobjects/LoginPagePO.robot
+#Resource            ../pageobjects/HomePagePO.robot
+#Resource            ../settings/UserAccess.robot
+#Resource            ../pageobjects/CartPagePO.robot
+#Resource            ../pageobjects/CheckoutPagePO.robot
+#Resource            ../pageobjects/CheckoutCompletedPagePO.robot
 
 *** Variables ***
 ${random_number}    Random Integer    1    100
@@ -53,5 +53,13 @@ Validate Checkout Successfully
     Element Text Should Be              ${MainMessageLbl}        Thank you for your order!
     Element Text Should Be              ${CompleteMessageLbl}    Your order has been dispatched, and will arrive just as fast as the pony can get there!
 
-
-        
+API Authentication
+    Create Session    auth    ${base_url}     verify=${True}
+    ${headers}=     Create Dictionary    Content-Type=application/json
+    ${data}=    Create Dictionary    username=${ApiValidUserEmail}    password=${ApiValidUserPassword}
+    ${response}=    POST On Session    auth    ${auth_url}     json=${data}    headers=${headers}
+    ${json}=    Set Variable    ${response.json()}
+    Log    Resposta JSON: ${json}
+    ${accessToken}=    Get Value From Json    ${json}    $.data..accessToken
+    ${AaccessToken}       Set Variable       ${accessToken[0]}
+    Log    The Access Token is: ${accessToken[0]}

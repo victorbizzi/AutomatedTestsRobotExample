@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Your Cart Page - Page Objects
+Documentation       Checkout Page - Page Objects
 Library             BuiltIn
 Library             SeleniumLibrary
 Library             DateTime

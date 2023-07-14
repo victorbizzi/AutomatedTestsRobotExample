@@ -7,13 +7,11 @@ Library             DateTime
 Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
-Library             PlaywrightLibrary
 Resource            ../settings/UserAccess.robot
 Resource            ../pageobjects/LoginPagePO.robot
 Resource            ../settings/Environments.robot
 Resource            ../settings/Keywords.robot
 Resource            ../pageobjects/HomePagePO.robot
-Resource            ../settings/UserAccess.robot
 Resource            ../pageobjects/CartPagePO.robot
 Resource            ../pageobjects/CheckoutPagePO.robot
 Resource            ../pageobjects/CheckoutCompletedPagePO.robot

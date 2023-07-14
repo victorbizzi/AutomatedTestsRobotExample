@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Home Page - Page Objects
+Documentation       Login Page - Page Objects
 Library             BuiltIn
 Library             SeleniumLibrary
 Library             DateTime
