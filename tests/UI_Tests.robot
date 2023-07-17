@@ -8,7 +8,7 @@ Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
 Resource            ../settings/UserAccess.robot
-Resource            ../pageobjects/LoginPagePO.robotgi
+Resource            ../pageobjects/LoginPagePO.robot
 Resource            ../settings/Environments.robot
 Resource            ../settings/Keywords.robot
 Resource            ../pageobjects/HomePagePO.robot
@@ -18,6 +18,9 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
 
 *** Variables ***
 
+*** Comments ***
+The following Tests does not work. I created the Steps just to show how I develop the Automated API Tests
+The context is: in UI, when the user insert the username 
 
 *** Test Cases ***
 1.1.1 - Valid Login

@@ -1,581 +1,581 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230714 10:03:38.127" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230714 11:47:24.258" rpa="false" schemaversion="3">
 <suite id="s1" name="AutTestDemo" source="C:\AutTestDemo">
 <suite id="s1-s1" name="Tests" source="C:\AutTestDemo\tests">
 <suite id="s1-s1-s1" name="UI Tests" source="C:\AutTestDemo\tests\UI_Tests.robot">
-<test id="s1-s1-s1-t1" name="1.1.1 - Valid Login" line="23">
+<test id="s1-s1-s1-t1" name="1.1.1 - Valid Login" line="26">
 <kw name="Open Saucedemo URL" library="Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_SauceDemo_QA}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230714 10:03:38.458" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<msg timestamp="20230714 10:03:38.468" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
-<status status="PASS" starttime="20230714 10:03:38.456" endtime="20230714 10:03:40.250"/>
+<msg timestamp="20230714 11:47:24.623" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20230714 11:47:24.636" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230714 11:47:24.623" endtime="20230714 11:47:26.642"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:03:40.251" endtime="20230714 10:03:40.378"/>
+<status status="PASS" starttime="20230714 11:47:26.643" endtime="20230714 11:47:26.771"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:38.456" endtime="20230714 10:03:40.378"/>
+<status status="PASS" starttime="20230714 11:47:24.622" endtime="20230714 11:47:26.771"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:40.379" endtime="20230714 10:03:40.412"/>
+<status status="PASS" starttime="20230714 11:47:26.774" endtime="20230714 11:47:26.817"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <arg>${standarduser}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:40.414" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20230714 10:03:40.413" endtime="20230714 10:03:40.507"/>
+<msg timestamp="20230714 11:47:26.823" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:26.820" endtime="20230714 11:47:26.971"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PasswordTxt}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:40.509" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230714 10:03:40.507" endtime="20230714 10:03:40.581"/>
+<msg timestamp="20230714 11:47:26.973" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230714 11:47:26.972" endtime="20230714 11:47:27.081"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LoginBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:40.583" level="INFO">Clicking button 'id=login-button'.</msg>
-<status status="PASS" starttime="20230714 10:03:40.582" endtime="20230714 10:03:40.662"/>
+<msg timestamp="20230714 11:47:27.084" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20230714 11:47:27.082" endtime="20230714 11:47:27.199"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SwagLabsLbl}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:40.663" endtime="20230714 10:03:40.689"/>
+<status status="PASS" starttime="20230714 11:47:27.200" endtime="20230714 11:47:27.233"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${SwagLabsLbl}</arg>
 <arg>Swag Labs</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:03:40.691" level="INFO">Verifying element '//div[@id='header_container']/div/div[2]/div' contains exact text 'Swag Labs'.</msg>
-<status status="PASS" starttime="20230714 10:03:40.690" endtime="20230714 10:03:40.714"/>
+<msg timestamp="20230714 11:47:27.235" level="INFO">Verifying element '//div[@id='header_container']/div/div[2]/div' contains exact text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230714 11:47:27.234" endtime="20230714 11:47:27.267"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${ProducsSwagLabsLbl}</arg>
 <arg>Products</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:03:40.715" level="INFO">Verifying element 'css:.title' contains exact text 'Products'.</msg>
-<status status="PASS" starttime="20230714 10:03:40.714" endtime="20230714 10:03:40.731"/>
+<msg timestamp="20230714 11:47:27.270" level="INFO">Verifying element 'css:.title' contains exact text 'Products'.</msg>
+<status status="PASS" starttime="20230714 11:47:27.268" endtime="20230714 11:47:27.299"/>
 </kw>
 <kw name="Finish TC" library="Keywords">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.localStorage.clear()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230714 10:03:40.733" level="INFO">Executing JavaScript:
+<msg timestamp="20230714 11:47:27.303" level="INFO">Executing JavaScript:
 window.localStorage.clear()
 Without any arguments.</msg>
-<status status="PASS" starttime="20230714 10:03:40.732" endtime="20230714 10:03:40.737"/>
+<status status="PASS" starttime="20230714 11:47:27.301" endtime="20230714 11:47:27.313"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230714 10:03:40.737" endtime="20230714 10:03:42.889"/>
+<status status="PASS" starttime="20230714 11:47:27.313" endtime="20230714 11:47:29.517"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:40.731" endtime="20230714 10:03:42.889"/>
+<status status="PASS" starttime="20230714 11:47:27.300" endtime="20230714 11:47:29.518"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:38.455" endtime="20230714 10:03:42.890"/>
+<status status="PASS" starttime="20230714 11:47:24.621" endtime="20230714 11:47:29.519"/>
 </test>
-<test id="s1-s1-s1-t2" name="1.1.2 - Nonexistent Username" line="34">
+<test id="s1-s1-s1-t2" name="1.1.2 - Nonexistent Username" line="37">
 <kw name="Open Saucedemo URL" library="Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_SauceDemo_QA}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230714 10:03:42.896" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<msg timestamp="20230714 10:03:42.903" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
-<status status="PASS" starttime="20230714 10:03:42.895" endtime="20230714 10:03:44.547"/>
+<msg timestamp="20230714 11:47:29.526" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20230714 11:47:29.539" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230714 11:47:29.525" endtime="20230714 11:47:31.691"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:03:44.547" endtime="20230714 10:03:44.675"/>
+<status status="PASS" starttime="20230714 11:47:31.691" endtime="20230714 11:47:31.808"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:42.893" endtime="20230714 10:03:44.675"/>
+<status status="PASS" starttime="20230714 11:47:29.523" endtime="20230714 11:47:31.809"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:44.676" endtime="20230714 10:03:44.710"/>
+<status status="PASS" starttime="20230714 11:47:31.810" endtime="20230714 11:47:31.846"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <arg>IDontExist</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:44.714" level="INFO">Typing text 'IDontExist' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20230714 10:03:44.712" endtime="20230714 10:03:44.810"/>
+<msg timestamp="20230714 11:47:31.849" level="INFO">Typing text 'IDontExist' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:31.847" endtime="20230714 11:47:31.988"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PasswordTxt}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:44.811" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230714 10:03:44.811" endtime="20230714 10:03:44.880"/>
+<msg timestamp="20230714 11:47:31.992" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230714 11:47:31.990" endtime="20230714 11:47:32.110"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LoginBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:44.882" level="INFO">Clicking button 'id=login-button'.</msg>
-<status status="PASS" starttime="20230714 10:03:44.882" endtime="20230714 10:03:44.928"/>
+<msg timestamp="20230714 11:47:32.113" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20230714 11:47:32.111" endtime="20230714 11:47:32.178"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:44.928" endtime="20230714 10:03:44.947"/>
+<status status="PASS" starttime="20230714 11:47:32.179" endtime="20230714 11:47:32.205"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <arg>Epic sadface: Username and password do not match any user in this service</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:03:44.949" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
-<status status="PASS" starttime="20230714 10:03:44.948" endtime="20230714 10:03:44.965"/>
+<msg timestamp="20230714 11:47:32.209" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<status status="PASS" starttime="20230714 11:47:32.206" endtime="20230714 11:47:32.234"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconUser}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:44.980" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:44.965" endtime="20230714 10:03:44.980"/>
+<msg timestamp="20230714 11:47:32.260" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:32.236" endtime="20230714 11:47:32.261"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconPassword}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:44.995" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:44.980" endtime="20230714 10:03:44.995"/>
+<msg timestamp="20230714 11:47:32.286" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:32.262" endtime="20230714 11:47:32.287"/>
 </kw>
 <kw name="Finish TC" library="Keywords">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.localStorage.clear()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230714 10:03:44.997" level="INFO">Executing JavaScript:
+<msg timestamp="20230714 11:47:32.294" level="INFO">Executing JavaScript:
 window.localStorage.clear()
 Without any arguments.</msg>
-<status status="PASS" starttime="20230714 10:03:44.996" endtime="20230714 10:03:45.001"/>
+<status status="PASS" starttime="20230714 11:47:32.292" endtime="20230714 11:47:32.301"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230714 10:03:45.002" endtime="20230714 10:03:47.173"/>
+<status status="PASS" starttime="20230714 11:47:32.301" endtime="20230714 11:47:34.506"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:44.996" endtime="20230714 10:03:47.173"/>
+<status status="PASS" starttime="20230714 11:47:32.290" endtime="20230714 11:47:34.506"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:42.893" endtime="20230714 10:03:47.174"/>
+<status status="PASS" starttime="20230714 11:47:29.521" endtime="20230714 11:47:34.508"/>
 </test>
-<test id="s1-s1-s1-t3" name="1.1.3 - Valid Username and Blank Password Textbox" line="46">
+<test id="s1-s1-s1-t3" name="1.1.3 - Valid Username and Blank Password Textbox" line="49">
 <kw name="Open Saucedemo URL" library="Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_SauceDemo_QA}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230714 10:03:47.179" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<msg timestamp="20230714 10:03:47.189" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
-<status status="PASS" starttime="20230714 10:03:47.179" endtime="20230714 10:03:48.878"/>
+<msg timestamp="20230714 11:47:34.515" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20230714 11:47:34.527" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230714 11:47:34.514" endtime="20230714 11:47:36.635"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:03:48.879" endtime="20230714 10:03:48.998"/>
+<status status="PASS" starttime="20230714 11:47:36.635" endtime="20230714 11:47:36.756"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:47.178" endtime="20230714 10:03:48.998"/>
+<status status="PASS" starttime="20230714 11:47:34.513" endtime="20230714 11:47:36.756"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:49.000" endtime="20230714 10:03:49.032"/>
+<status status="PASS" starttime="20230714 11:47:36.757" endtime="20230714 11:47:36.794"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <arg>IDontExist</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:49.034" level="INFO">Typing text 'IDontExist' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20230714 10:03:49.033" endtime="20230714 10:03:49.170"/>
+<msg timestamp="20230714 11:47:36.798" level="INFO">Typing text 'IDontExist' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:36.797" endtime="20230714 11:47:36.954"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LoginBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:49.172" level="INFO">Clicking button 'id=login-button'.</msg>
-<status status="PASS" starttime="20230714 10:03:49.171" endtime="20230714 10:03:49.224"/>
+<msg timestamp="20230714 11:47:36.958" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20230714 11:47:36.955" endtime="20230714 11:47:37.029"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:49.225" endtime="20230714 10:03:49.247"/>
+<status status="PASS" starttime="20230714 11:47:37.030" endtime="20230714 11:47:37.059"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <arg>Epic sadface: Password is required</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:03:49.250" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Password is required'.</msg>
-<status status="PASS" starttime="20230714 10:03:49.248" endtime="20230714 10:03:49.266"/>
+<msg timestamp="20230714 11:47:37.063" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Password is required'.</msg>
+<status status="PASS" starttime="20230714 11:47:37.061" endtime="20230714 11:47:37.087"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconUser}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:49.281" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:49.266" endtime="20230714 10:03:49.281"/>
+<msg timestamp="20230714 11:47:37.111" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:37.088" endtime="20230714 11:47:37.112"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconPassword}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:49.296" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:49.281" endtime="20230714 10:03:49.296"/>
+<msg timestamp="20230714 11:47:37.136" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:37.114" endtime="20230714 11:47:37.136"/>
 </kw>
 <kw name="Finish TC" library="Keywords">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.localStorage.clear()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230714 10:03:49.298" level="INFO">Executing JavaScript:
+<msg timestamp="20230714 11:47:37.142" level="INFO">Executing JavaScript:
 window.localStorage.clear()
 Without any arguments.</msg>
-<status status="PASS" starttime="20230714 10:03:49.297" endtime="20230714 10:03:49.302"/>
+<status status="PASS" starttime="20230714 11:47:37.139" endtime="20230714 11:47:37.150"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230714 10:03:49.303" endtime="20230714 10:03:51.419"/>
+<status status="PASS" starttime="20230714 11:47:37.150" endtime="20230714 11:47:39.344"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:49.297" endtime="20230714 10:03:51.420"/>
+<status status="PASS" starttime="20230714 11:47:37.138" endtime="20230714 11:47:39.344"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:47.177" endtime="20230714 10:03:51.421"/>
+<status status="PASS" starttime="20230714 11:47:34.511" endtime="20230714 11:47:39.346"/>
 </test>
-<test id="s1-s1-s1-t4" name="1.1.4 - Valid User and Wrong Password" line="57">
+<test id="s1-s1-s1-t4" name="1.1.4 - Valid User and Wrong Password" line="60">
 <kw name="Open Saucedemo URL" library="Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_SauceDemo_QA}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230714 10:03:51.425" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<msg timestamp="20230714 10:03:51.432" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
-<status status="PASS" starttime="20230714 10:03:51.424" endtime="20230714 10:03:53.073"/>
+<msg timestamp="20230714 11:47:39.354" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20230714 11:47:39.367" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230714 11:47:39.353" endtime="20230714 11:47:41.404"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:03:53.074" endtime="20230714 10:03:53.198"/>
+<status status="PASS" starttime="20230714 11:47:41.404" endtime="20230714 11:47:41.537"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:51.423" endtime="20230714 10:03:53.199"/>
+<status status="PASS" starttime="20230714 11:47:39.352" endtime="20230714 11:47:41.537"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:53.199" endtime="20230714 10:03:53.224"/>
+<status status="PASS" starttime="20230714 11:47:41.539" endtime="20230714 11:47:41.573"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <arg>${standarduser}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:53.225" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20230714 10:03:53.224" endtime="20230714 10:03:53.312"/>
+<msg timestamp="20230714 11:47:41.575" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:41.574" endtime="20230714 11:47:41.776"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PasswordTxt}</arg>
 <arg>WrongPassword</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:53.313" level="INFO">Typing text 'WrongPassword' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230714 10:03:53.313" endtime="20230714 10:03:53.392"/>
+<msg timestamp="20230714 11:47:41.779" level="INFO">Typing text 'WrongPassword' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230714 11:47:41.777" endtime="20230714 11:47:41.905"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LoginBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:53.394" level="INFO">Clicking button 'id=login-button'.</msg>
-<status status="PASS" starttime="20230714 10:03:53.393" endtime="20230714 10:03:53.441"/>
+<msg timestamp="20230714 11:47:41.908" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20230714 11:47:41.906" endtime="20230714 11:47:41.991"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:53.443" endtime="20230714 10:03:53.464"/>
+<status status="PASS" starttime="20230714 11:47:41.994" endtime="20230714 11:47:42.023"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <arg>Epic sadface: Username and password do not match any user in this service</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:03:53.465" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
-<status status="PASS" starttime="20230714 10:03:53.465" endtime="20230714 10:03:53.486"/>
+<msg timestamp="20230714 11:47:42.024" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<status status="PASS" starttime="20230714 11:47:42.023" endtime="20230714 11:47:42.052"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconUser}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:53.502" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:53.488" endtime="20230714 10:03:53.502"/>
+<msg timestamp="20230714 11:47:42.078" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:42.053" endtime="20230714 11:47:42.078"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconPassword}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:53.517" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:53.502" endtime="20230714 10:03:53.518"/>
+<msg timestamp="20230714 11:47:42.108" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:42.081" endtime="20230714 11:47:42.109"/>
 </kw>
 <kw name="Finish TC" library="Keywords">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.localStorage.clear()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230714 10:03:53.521" level="INFO">Executing JavaScript:
+<msg timestamp="20230714 11:47:42.111" level="INFO">Executing JavaScript:
 window.localStorage.clear()
 Without any arguments.</msg>
-<status status="PASS" starttime="20230714 10:03:53.519" endtime="20230714 10:03:53.525"/>
+<status status="PASS" starttime="20230714 11:47:42.110" endtime="20230714 11:47:42.118"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230714 10:03:53.525" endtime="20230714 10:03:55.660"/>
+<status status="PASS" starttime="20230714 11:47:42.119" endtime="20230714 11:47:44.311"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:53.519" endtime="20230714 10:03:55.660"/>
+<status status="PASS" starttime="20230714 11:47:42.110" endtime="20230714 11:47:44.311"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:51.423" endtime="20230714 10:03:55.661"/>
+<status status="PASS" starttime="20230714 11:47:39.349" endtime="20230714 11:47:44.313"/>
 </test>
-<test id="s1-s1-s1-t5" name="1.1.5 - Try to login with Lockedout User" line="69">
+<test id="s1-s1-s1-t5" name="1.1.5 - Try to login with Lockedout User" line="72">
 <kw name="Open Saucedemo URL" library="Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_SauceDemo_QA}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230714 10:03:55.665" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<msg timestamp="20230714 10:03:55.673" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
-<status status="PASS" starttime="20230714 10:03:55.665" endtime="20230714 10:03:57.356"/>
+<msg timestamp="20230714 11:47:44.322" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20230714 11:47:44.336" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230714 11:47:44.321" endtime="20230714 11:47:46.418"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:03:57.356" endtime="20230714 10:03:57.509"/>
+<status status="PASS" starttime="20230714 11:47:46.418" endtime="20230714 11:47:46.541"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:55.664" endtime="20230714 10:03:57.510"/>
+<status status="PASS" starttime="20230714 11:47:44.319" endtime="20230714 11:47:46.541"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:57.511" endtime="20230714 10:03:57.536"/>
+<status status="PASS" starttime="20230714 11:47:46.544" endtime="20230714 11:47:46.583"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <arg>${lockedoutuser}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:57.537" level="INFO">Typing text 'locked_out_user' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20230714 10:03:57.536" endtime="20230714 10:03:57.673"/>
+<msg timestamp="20230714 11:47:46.585" level="INFO">Typing text 'locked_out_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:46.584" endtime="20230714 11:47:46.768"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PasswordTxt}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:57.674" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230714 10:03:57.674" endtime="20230714 10:03:57.740"/>
+<msg timestamp="20230714 11:47:46.771" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230714 11:47:46.770" endtime="20230714 11:47:46.958"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LoginBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:03:57.741" level="INFO">Clicking button 'id=login-button'.</msg>
-<status status="PASS" starttime="20230714 10:03:57.740" endtime="20230714 10:03:57.794"/>
+<msg timestamp="20230714 11:47:46.964" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20230714 11:47:46.961" endtime="20230714 11:47:47.098"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:03:57.795" endtime="20230714 10:03:57.816"/>
+<status status="PASS" starttime="20230714 11:47:47.099" endtime="20230714 11:47:47.140"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${ErrorLoginMessage}</arg>
 <arg>Epic sadface: Sorry, this user has been locked out.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:03:57.817" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Sorry, this user has been locked out.'.</msg>
-<status status="PASS" starttime="20230714 10:03:57.817" endtime="20230714 10:03:57.834"/>
+<msg timestamp="20230714 11:47:47.143" level="INFO">Verifying element '//h3' contains exact text 'Epic sadface: Sorry, this user has been locked out.'.</msg>
+<status status="PASS" starttime="20230714 11:47:47.141" endtime="20230714 11:47:47.176"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconUser}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:57.851" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:57.835" endtime="20230714 10:03:57.851"/>
+<msg timestamp="20230714 11:47:47.204" level="INFO">Element 'css:.form_group:nth-child(1) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:47.177" endtime="20230714 11:47:47.204"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${XIconPassword}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20230714 10:03:57.868" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
-<status status="PASS" starttime="20230714 10:03:57.852" endtime="20230714 10:03:57.868"/>
+<msg timestamp="20230714 11:47:47.233" level="INFO">Element 'css:.form_group:nth-child(2) path' is displayed.</msg>
+<status status="PASS" starttime="20230714 11:47:47.205" endtime="20230714 11:47:47.236"/>
 </kw>
 <kw name="Finish TC" library="Keywords">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.localStorage.clear()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230714 10:03:57.871" level="INFO">Executing JavaScript:
+<msg timestamp="20230714 11:47:47.240" level="INFO">Executing JavaScript:
 window.localStorage.clear()
 Without any arguments.</msg>
-<status status="PASS" starttime="20230714 10:03:57.871" endtime="20230714 10:03:57.876"/>
+<status status="PASS" starttime="20230714 11:47:47.238" endtime="20230714 11:47:47.250"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230714 10:03:57.876" endtime="20230714 10:03:59.985"/>
+<status status="PASS" starttime="20230714 11:47:47.250" endtime="20230714 11:47:49.432"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:57.869" endtime="20230714 10:03:59.985"/>
+<status status="PASS" starttime="20230714 11:47:47.238" endtime="20230714 11:47:49.433"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:55.664" endtime="20230714 10:03:59.986"/>
+<status status="PASS" starttime="20230714 11:47:44.319" endtime="20230714 11:47:49.434"/>
 </test>
-<test id="s1-s1-s1-t6" name="1.1.6 - Example running Headless" line="81">
+<test id="s1-s1-s1-t6" name="1.1.6 - Example running Headless" line="84">
 <kw name="Go in Headless" library="Keywords">
 <kw name="Evaluate" library="BuiltIn">
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20230714 10:03:59.990" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000023A52026E90&gt;</msg>
-<status status="PASS" starttime="20230714 10:03:59.989" endtime="20230714 10:03:59.990"/>
+<msg timestamp="20230714 11:47:49.442" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001D23AD944D0&gt;</msg>
+<status status="PASS" starttime="20230714 11:47:49.442" endtime="20230714 11:47:49.443"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20230714 10:03:59.990" endtime="20230714 10:03:59.991"/>
+<status status="PASS" starttime="20230714 11:47:49.444" endtime="20230714 11:47:49.445"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>chrome_options=${options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20230714 10:03:59.993" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230714 10:04:00.001" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
-<status status="PASS" starttime="20230714 10:03:59.993" endtime="20230714 10:04:01.155"/>
+<msg timestamp="20230714 11:47:49.446" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230714 11:47:49.463" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230714 11:47:49.446" endtime="20230714 11:47:50.805"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL_SauceDemo_QA}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230714 10:04:01.156" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<status status="PASS" starttime="20230714 10:04:01.156" endtime="20230714 10:04:01.532"/>
+<msg timestamp="20230714 11:47:50.805" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20230714 11:47:50.805" endtime="20230714 11:47:51.322"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:04:01.532" endtime="20230714 10:04:01.642"/>
+<status status="PASS" starttime="20230714 11:47:51.323" endtime="20230714 11:47:51.442"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:59.989" endtime="20230714 10:04:01.642"/>
+<status status="PASS" starttime="20230714 11:47:49.441" endtime="20230714 11:47:51.442"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:04:01.643" endtime="20230714 10:04:01.646"/>
+<status status="PASS" starttime="20230714 11:47:51.445" endtime="20230714 11:47:51.451"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:01.647" endtime="20230714 10:04:01.666"/>
+<status status="PASS" starttime="20230714 11:47:51.452" endtime="20230714 11:47:51.495"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <arg>${standarduser}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:01.666" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20230714 10:04:01.666" endtime="20230714 10:04:01.762"/>
+<msg timestamp="20230714 11:47:51.500" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:51.497" endtime="20230714 11:47:51.646"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PasswordTxt}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:01.765" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230714 10:04:01.763" endtime="20230714 10:04:01.834"/>
+<msg timestamp="20230714 11:47:51.647" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230714 11:47:51.646" endtime="20230714 11:47:51.733"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LoginBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:01.835" level="INFO">Clicking button 'id=login-button'.</msg>
-<status status="PASS" starttime="20230714 10:04:01.835" endtime="20230714 10:04:01.903"/>
+<msg timestamp="20230714 11:47:51.735" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20230714 11:47:51.734" endtime="20230714 11:47:51.845"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SwagLabsLbl}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:01.904" endtime="20230714 10:04:01.923"/>
+<status status="PASS" starttime="20230714 11:47:51.847" endtime="20230714 11:47:51.881"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${SwagLabsLbl}</arg>
 <arg>Swag Labs</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:01.926" level="INFO">Verifying element '//div[@id='header_container']/div/div[2]/div' contains exact text 'Swag Labs'.</msg>
-<status status="PASS" starttime="20230714 10:04:01.924" endtime="20230714 10:04:01.941"/>
+<msg timestamp="20230714 11:47:51.883" level="INFO">Verifying element '//div[@id='header_container']/div/div[2]/div' contains exact text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230714 11:47:51.882" endtime="20230714 11:47:51.912"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${ProducsSwagLabsLbl}</arg>
 <arg>Products</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:01.943" level="INFO">Verifying element 'css:.title' contains exact text 'Products'.</msg>
-<status status="PASS" starttime="20230714 10:04:01.941" endtime="20230714 10:04:01.956"/>
+<msg timestamp="20230714 11:47:51.915" level="INFO">Verifying element 'css:.title' contains exact text 'Products'.</msg>
+<status status="PASS" starttime="20230714 11:47:51.914" endtime="20230714 11:47:51.948"/>
 </kw>
 <kw name="Finish TC" library="Keywords">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.localStorage.clear()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230714 10:04:01.958" level="INFO">Executing JavaScript:
+<msg timestamp="20230714 11:47:51.954" level="INFO">Executing JavaScript:
 window.localStorage.clear()
 Without any arguments.</msg>
-<status status="PASS" starttime="20230714 10:04:01.957" endtime="20230714 10:04:01.962"/>
+<status status="PASS" starttime="20230714 11:47:51.952" endtime="20230714 11:47:51.967"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230714 10:04:01.962" endtime="20230714 10:04:04.053"/>
+<status status="PASS" starttime="20230714 11:47:51.969" endtime="20230714 11:47:54.098"/>
 </kw>
-<status status="PASS" starttime="20230714 10:04:01.956" endtime="20230714 10:04:04.054"/>
+<status status="PASS" starttime="20230714 11:47:51.951" endtime="20230714 11:47:54.098"/>
 </kw>
-<status status="PASS" starttime="20230714 10:03:59.988" endtime="20230714 10:04:04.056"/>
+<status status="PASS" starttime="20230714 11:47:49.439" endtime="20230714 11:47:54.100"/>
 </test>
-<test id="s1-s1-s1-t7" name="2.1.1 - Add product to Cart and finish with positive Purchase flow" line="93">
+<test id="s1-s1-s1-t7" name="2.1.1 - Add product to Cart and finish with positive Purchase flow" line="96">
 <kw name="Valid Login" library="Keywords">
 <kw name="Open Saucedemo URL" library="Keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL_SauceDemo_QA}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230714 10:04:04.060" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<msg timestamp="20230714 10:04:04.066" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
-<status status="PASS" starttime="20230714 10:04:04.059" endtime="20230714 10:04:05.766"/>
+<msg timestamp="20230714 11:47:54.106" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20230714 11:47:54.117" level="INFO">Executing: C:\Users\VictorMelo\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json</msg>
+<status status="PASS" starttime="20230714 11:47:54.106" endtime="20230714 11:47:56.020"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230714 10:04:05.766" endtime="20230714 10:04:05.879"/>
+<status status="PASS" starttime="20230714 11:47:56.021" endtime="20230714 11:47:56.144"/>
 </kw>
-<status status="PASS" starttime="20230714 10:04:04.059" endtime="20230714 10:04:05.879"/>
+<status status="PASS" starttime="20230714 11:47:54.105" endtime="20230714 11:47:56.145"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:05.880" endtime="20230714 10:04:05.901"/>
+<status status="PASS" starttime="20230714 11:47:56.145" endtime="20230714 11:47:56.185"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserNameTxt}</arg>
 <arg>${standarduser}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:05.901" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20230714 10:04:05.901" endtime="20230714 10:04:05.985"/>
+<msg timestamp="20230714 11:47:56.188" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.186" endtime="20230714 11:47:56.334"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PasswordTxt}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:05.988" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20230714 10:04:05.986" endtime="20230714 10:04:06.055"/>
+<msg timestamp="20230714 11:47:56.335" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.335" endtime="20230714 11:47:56.411"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LoginBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.055" level="INFO">Clicking button 'id=login-button'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.055" endtime="20230714 10:04:06.126"/>
+<msg timestamp="20230714 11:47:56.412" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.412" endtime="20230714 11:47:56.516"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${SwagLabsLbl}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:06.126" endtime="20230714 10:04:06.158"/>
+<status status="PASS" starttime="20230714 11:47:56.516" endtime="20230714 11:47:56.547"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${SwagLabsLbl}</arg>
 <arg>Swag Labs</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:06.159" level="INFO">Verifying element '//div[@id='header_container']/div/div[2]/div' contains exact text 'Swag Labs'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.158" endtime="20230714 10:04:06.221"/>
+<msg timestamp="20230714 11:47:56.548" level="INFO">Verifying element '//div[@id='header_container']/div/div[2]/div' contains exact text 'Swag Labs'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.547" endtime="20230714 11:47:56.574"/>
 </kw>
-<status status="PASS" starttime="20230714 10:04:04.058" endtime="20230714 10:04:06.222"/>
+<status status="PASS" starttime="20230714 11:47:54.105" endtime="20230714 11:47:56.574"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${fristProductAddBtn}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:06.234" endtime="20230714 10:04:06.292"/>
+<status status="PASS" starttime="20230714 11:47:56.575" endtime="20230714 11:47:56.594"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${fristProductAddBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.309" level="INFO">Clicking button 'xpath=//div[2]/button'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.307" endtime="20230714 10:04:06.449"/>
+<msg timestamp="20230714 11:47:56.595" level="INFO">Clicking button 'xpath=//div[2]/button'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.594" endtime="20230714 11:47:56.685"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${cart}</var>
 <arg>${cartItemLbl}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.475" level="INFO">${cart} = 1</msg>
-<status status="PASS" starttime="20230714 10:04:06.450" endtime="20230714 10:04:06.475"/>
+<msg timestamp="20230714 11:47:56.713" level="INFO">${cart} = 1</msg>
+<status status="PASS" starttime="20230714 11:47:56.686" endtime="20230714 11:47:56.714"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;${cart}&quot; != &quot;1&quot;">
@@ -583,88 +583,88 @@ Without any arguments.</msg>
 <arg>FAIL</arg>
 <arg>Text should be equal "1" but was "${cart}"</arg>
 <doc>Runs the keyword and checks that the expected error occurred.</doc>
-<status status="NOT RUN" starttime="20230714 10:04:06.476" endtime="20230714 10:04:06.476"/>
+<status status="NOT RUN" starttime="20230714 11:47:56.715" endtime="20230714 11:47:56.715"/>
 </kw>
-<status status="NOT RUN" starttime="20230714 10:04:06.476" endtime="20230714 10:04:06.476"/>
+<status status="NOT RUN" starttime="20230714 11:47:56.715" endtime="20230714 11:47:56.716"/>
 </branch>
-<status status="PASS" starttime="20230714 10:04:06.476" endtime="20230714 10:04:06.476"/>
+<status status="PASS" starttime="20230714 11:47:56.714" endtime="20230714 11:47:56.716"/>
 </if>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${ProductName}</var>
 <arg>${ProductNameLbl}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.495" level="INFO">${ProductName} = Sauce Labs Backpack</msg>
-<status status="PASS" starttime="20230714 10:04:06.476" endtime="20230714 10:04:06.496"/>
+<msg timestamp="20230714 11:47:56.749" level="INFO">${ProductName} = Sauce Labs Backpack</msg>
+<status status="PASS" starttime="20230714 11:47:56.717" endtime="20230714 11:47:56.749"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${cartBtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.496" level="INFO">Clicking element '//div[3]/a'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.496" endtime="20230714 10:04:06.543"/>
+<msg timestamp="20230714 11:47:56.751" level="INFO">Clicking element '//div[3]/a'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.751" endtime="20230714 11:47:56.804"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${YourCartLbl}</arg>
 <arg>Your Cart</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:06.544" level="INFO">Verifying element '//div[@id='header_container']/div[2]/span' contains exact text 'Your Cart'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.543" endtime="20230714 10:04:06.622"/>
+<msg timestamp="20230714 11:47:56.808" level="INFO">Verifying element '//div[@id='header_container']/div[2]/span' contains exact text 'Your Cart'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.804" endtime="20230714 11:47:56.829"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CheckoutBtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.624" level="INFO">Clicking element 'id=checkout'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.623" endtime="20230714 10:04:06.683"/>
+<msg timestamp="20230714 11:47:56.830" level="INFO">Clicking element 'id=checkout'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.829" endtime="20230714 11:47:56.874"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${CheckoutYourInfoLbl}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:06.684" endtime="20230714 10:04:06.702"/>
+<status status="PASS" starttime="20230714 11:47:56.878" endtime="20230714 11:47:56.903"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${CheckoutYourInfoLbl}</arg>
 <arg>Checkout: Your Information</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:06.703" level="INFO">Verifying element 'css:.title' contains exact text 'Checkout: Your Information'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.702" endtime="20230714 10:04:06.715"/>
+<msg timestamp="20230714 11:47:56.905" level="INFO">Verifying element 'css:.title' contains exact text 'Checkout: Your Information'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.904" endtime="20230714 11:47:56.924"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${FirstNameTxt}</arg>
 <arg>Username</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.716" level="INFO">Typing text 'Username' into text field 'id=first-name'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.715" endtime="20230714 10:04:06.823"/>
+<msg timestamp="20230714 11:47:56.926" level="INFO">Typing text 'Username' into text field 'id=first-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:56.925" endtime="20230714 11:47:57.031"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LastNametxt}</arg>
 <arg>UserSurname</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.825" level="INFO">Typing text 'UserSurname' into text field 'id=last-name'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.824" endtime="20230714 10:04:06.969"/>
+<msg timestamp="20230714 11:47:57.035" level="INFO">Typing text 'UserSurname' into text field 'id=last-name'.</msg>
+<status status="PASS" starttime="20230714 11:47:57.031" endtime="20230714 11:47:57.146"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${ZipPCTxt}</arg>
 <arg>123456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:06.971" level="INFO">Typing text '123456' into text field 'id=postal-code'.</msg>
-<status status="PASS" starttime="20230714 10:04:06.970" endtime="20230714 10:04:07.049"/>
+<msg timestamp="20230714 11:47:57.149" level="INFO">Typing text '123456' into text field 'id=postal-code'.</msg>
+<status status="PASS" starttime="20230714 11:47:57.147" endtime="20230714 11:47:57.239"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ContinueBtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:07.050" level="INFO">Clicking element 'id=continue'.</msg>
-<status status="PASS" starttime="20230714 10:04:07.049" endtime="20230714 10:04:07.096"/>
+<msg timestamp="20230714 11:47:57.242" level="INFO">Clicking element 'id=continue'.</msg>
+<status status="PASS" starttime="20230714 11:47:57.241" endtime="20230714 11:47:57.356"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${CheckoutYourInfoLbl}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:07.096" endtime="20230714 10:04:07.123"/>
+<status status="PASS" starttime="20230714 11:47:57.357" endtime="20230714 11:47:57.393"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${ProductCheckoutName}</var>
 <arg>${ProductNameCheckout}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:07.133" level="INFO">${ProductCheckoutName} = Sauce Labs Backpack</msg>
-<status status="PASS" starttime="20230714 10:04:07.123" endtime="20230714 10:04:07.133"/>
+<msg timestamp="20230714 11:47:57.421" level="INFO">${ProductCheckoutName} = Sauce Labs Backpack</msg>
+<status status="PASS" starttime="20230714 11:47:57.394" endtime="20230714 11:47:57.421"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;${ProductName}&quot; != &quot;${ProductCheckoutName}&quot;">
@@ -672,70 +672,70 @@ Without any arguments.</msg>
 <arg>FAIL</arg>
 <arg>Text should be equal "${ProductName}" but was "${ProductCheckoutName}"</arg>
 <doc>Runs the keyword and checks that the expected error occurred.</doc>
-<status status="NOT RUN" starttime="20230714 10:04:07.134" endtime="20230714 10:04:07.135"/>
+<status status="NOT RUN" starttime="20230714 11:47:57.425" endtime="20230714 11:47:57.425"/>
 </kw>
-<status status="NOT RUN" starttime="20230714 10:04:07.134" endtime="20230714 10:04:07.135"/>
+<status status="NOT RUN" starttime="20230714 11:47:57.423" endtime="20230714 11:47:57.425"/>
 </branch>
-<status status="PASS" starttime="20230714 10:04:07.134" endtime="20230714 10:04:07.135"/>
+<status status="PASS" starttime="20230714 11:47:57.423" endtime="20230714 11:47:57.426"/>
 </if>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${FinishCheckoutBtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230714 10:04:07.136" level="INFO">Clicking element 'id=finish'.</msg>
-<status status="PASS" starttime="20230714 10:04:07.135" endtime="20230714 10:04:07.170"/>
+<msg timestamp="20230714 11:47:57.427" level="INFO">Clicking element 'id=finish'.</msg>
+<status status="PASS" starttime="20230714 11:47:57.426" endtime="20230714 11:47:57.504"/>
 </kw>
 <kw name="Validate Checkout Successfully" library="Keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PageTitleCompleteLbl}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230714 10:04:07.173" endtime="20230714 10:04:07.189"/>
+<status status="PASS" starttime="20230714 11:47:57.507" endtime="20230714 11:47:57.531"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${PageTitleCompleteLbl}</arg>
 <arg>Checkout: Complete!</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:07.190" level="INFO">Verifying element 'css:.title' contains exact text 'Checkout: Complete!'.</msg>
-<status status="PASS" starttime="20230714 10:04:07.189" endtime="20230714 10:04:07.203"/>
+<msg timestamp="20230714 11:47:57.534" level="INFO">Verifying element 'css:.title' contains exact text 'Checkout: Complete!'.</msg>
+<status status="PASS" starttime="20230714 11:47:57.532" endtime="20230714 11:47:57.558"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${MainMessageLbl}</arg>
 <arg>Thank you for your order!</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:07.204" level="INFO">Verifying element '//h2' contains exact text 'Thank you for your order!'.</msg>
-<status status="PASS" starttime="20230714 10:04:07.203" endtime="20230714 10:04:07.215"/>
+<msg timestamp="20230714 11:47:57.560" level="INFO">Verifying element '//h2' contains exact text 'Thank you for your order!'.</msg>
+<status status="PASS" starttime="20230714 11:47:57.558" endtime="20230714 11:47:57.584"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${CompleteMessageLbl}</arg>
 <arg>Your order has been dispatched, and will arrive just as fast as the pony can get there!</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230714 10:04:07.216" level="INFO">Verifying element 'css:.complete-text' contains exact text 'Your order has been dispatched, and will arrive just as fast as the pony can get there!'.</msg>
-<status status="PASS" starttime="20230714 10:04:07.215" endtime="20230714 10:04:07.230"/>
+<msg timestamp="20230714 11:47:57.585" level="INFO">Verifying element 'css:.complete-text' contains exact text 'Your order has been dispatched, and will arrive just as fast as the pony can get there!'.</msg>
+<status status="PASS" starttime="20230714 11:47:57.584" endtime="20230714 11:47:57.614"/>
 </kw>
-<status status="PASS" starttime="20230714 10:04:07.170" endtime="20230714 10:04:07.230"/>
+<status status="PASS" starttime="20230714 11:47:57.505" endtime="20230714 11:47:57.614"/>
 </kw>
 <kw name="Finish TC" library="Keywords">
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.localStorage.clear()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230714 10:04:07.231" level="INFO">Executing JavaScript:
+<msg timestamp="20230714 11:47:57.619" level="INFO">Executing JavaScript:
 window.localStorage.clear()
 Without any arguments.</msg>
-<status status="PASS" starttime="20230714 10:04:07.231" endtime="20230714 10:04:07.236"/>
+<status status="PASS" starttime="20230714 11:47:57.618" endtime="20230714 11:47:57.637"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230714 10:04:07.236" endtime="20230714 10:04:09.356"/>
+<status status="PASS" starttime="20230714 11:47:57.638" endtime="20230714 11:47:59.828"/>
 </kw>
-<status status="PASS" starttime="20230714 10:04:07.230" endtime="20230714 10:04:09.356"/>
+<status status="PASS" starttime="20230714 11:47:57.617" endtime="20230714 11:47:59.828"/>
 </kw>
-<status status="PASS" starttime="20230714 10:04:04.057" endtime="20230714 10:04:09.357"/>
+<status status="PASS" starttime="20230714 11:47:54.103" endtime="20230714 11:47:59.829"/>
 </test>
-<doc>Executable file for Regression Testing</doc>
-<status status="PASS" starttime="20230714 10:03:38.167" endtime="20230714 10:04:09.359"/>
+<doc>Executable file for UI Regression Testing</doc>
+<status status="PASS" starttime="20230714 11:47:24.306" endtime="20230714 11:47:59.833"/>
 </suite>
-<status status="PASS" starttime="20230714 10:03:38.160" endtime="20230714 10:04:09.362"/>
+<status status="PASS" starttime="20230714 11:47:24.298" endtime="20230714 11:47:59.839"/>
 </suite>
-<status status="PASS" starttime="20230714 10:03:38.134" endtime="20230714 10:04:09.365"/>
+<status status="PASS" starttime="20230714 11:47:24.265" endtime="20230714 11:47:59.843"/>
 </suite>
 <statistics>
 <total>
