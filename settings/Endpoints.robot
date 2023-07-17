@@ -6,7 +6,7 @@ Library             DateTime
 
 *** Variables ***
 #URLs bellow does not exist. They are just examples
-${base_url}                         https://standardQAURL.qa.example.service
+${base_url}                         https://standardQAURL.qa.example
 ${auth_url}                         /api/authentication-api/v3/authentication/userlog
 ${sendpin_url}                      /api/for-api/v3/authentication/send-pin
 ${validatepin_url}                  /api/for-api/v3/authentication/validate-pin

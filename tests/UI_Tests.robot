@@ -19,8 +19,6 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
 *** Variables ***
 
 *** Comments ***
-The following Tests does not work. I created the Steps just to show how I develop the Automated API Tests
-The context is: in UI, when the user insert the username 
 
 *** Test Cases ***
 1.1.1 - Valid Login
@@ -93,6 +91,15 @@ The context is: in UI, when the user insert the username
     Element Text Should Be              ${ProducsSwagLabsLbl}          Products
     Finish TC
 
+1.1.7 - Example using Arguments - Blank Username
+    Open Saucedemo URL
+    ExampleArguments                    ${Empty}           ${password}
+    Wait Until Element Is Visible       ${ErrorLoginMessage}  
+    Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username is required
+    Element Should Be Visible           ${XIconUser}
+    Element Should Be Visible           ${XIconPassword}
+    Finish TC
+
 2.1.1 - Add product to Cart and finish with positive Purchase flow
     Valid Login
     Wait Until Element Is Visible       ${fristProductAddBtn}     
@@ -120,7 +127,6 @@ The context is: in UI, when the user insert the username
     Click Element                        ${FinishCheckoutBtn}     
     Validate Checkout Successfully
     Finish TC
-
 
 
 

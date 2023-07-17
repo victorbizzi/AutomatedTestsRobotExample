@@ -8,12 +8,20 @@ Library             RequestsLibrary
 Library             JSONLibrary
 Library             String
 
+
+
+
+Library             BuiltIn
+Library             SeleniumLibrary
+Library             OperatingSystem
+Library             DateTime
+Library             RequestsLibrary
+Library             JSONLibrary
+Library             String
 *** Variables ***
 ${random_number}    Random Integer    1    100
 
-
 *** Keywords ***
-
 Finish TC
     SeleniumLibrary.Execute JavaScript                  window.localStorage.clear()
     SeleniumLibrary.Close Browser
@@ -56,3 +64,11 @@ API Authentication
     ${accessToken}=    Get Value From Json    ${json}    $.data..accessToken
     ${AaccessToken}       Set Variable       ${accessToken[0]}
     Log    The Access Token is: ${accessToken[0]}
+
+ExampleArguments
+    [Arguments]      ${user}              ${pass}
+    Wait Until Element Is Visible         ${UserNameTxt}  
+    Input Text       ${UserNameTxt}        ${user}  
+    Input Text       ${PasswordTxt}        ${pass}
+    Click button     ${LoginBtn}
+
