@@ -15,14 +15,14 @@ Resource            ../settings/Endpoints.robot
 
 
 *** Comments ***
-The following Tests does not work. I created the Steps just to show how I develop the Automated API Tests
-The context is: in UI, when the user insert the username and Password, the following screen has a "2 Authentication Factor"
- - The user can choose if he/she wants to receive the PIN via Email or SMS
- - After this step, the user needs to type the PIN in Textbox to validate
- - It is a real situation that I already faced. After talking with the Manager, we reached 2 options:
-       1 - Insert a Standard PIN for TestAutomation user
-       2 - Send the PIN in Response (by security it happens just in QA environment. In PROD when the user press F12 and go to Network -> Response, the PIN in returns "null" ["pin":null]) 
-To make the Tests more real, we decided the seccond option
+The following tests do not work. I created the steps just to show how I develop the automated API tests.
+The context is: in the UI, when the user inserts the username and password, the following screen displays a '2-factor authentication' 
+ - The user can choose whether to receive the PIN via email or SMS.
+ - After this step, the user needs to enter the PIN in a text box for validation.
+ - This is a real situation I've encountered. After discussing it with the manager, we came up with two options:
+       1 - Insert a standard PIN for the Test Automation user
+       2 - Send the PIN in the response (note: for security reasons, this only occurs in the QA environment. In production, if a user presses F12, goes to Network -> Response, the PIN returns as "null" ["pin": null]). 
+To make the tests more realistic, we decided to use the second option.
 
 *** Test Cases ***
 1.1.1 API - validate-pin - Valid PIN
