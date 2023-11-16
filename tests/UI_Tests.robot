@@ -24,7 +24,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
 
 *** Test Cases ***
 1.1.1 - Valid Login
-    Open Saucedemo URL
+    [Setup]                             Open Saucedemo URL
     Wait Until Element Is Visible       ${UserNameTxt}
     Input Text                          ${UserNameTxt}          ${standarduser}
     Input Text                          ${PasswordTxt}          ${password}
@@ -35,7 +35,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     [Teardown]                          Finish TC
 
 1.1.2 - Nonexistent Username
-    Open Saucedemo URL
+    [Setup]                             Open Saucedemo URL
     Wait Until Element Is Visible       ${UserNameTxt}
     Input Text                          ${UserNameTxt}          IDontExist
     Input Text                          ${PasswordTxt}          ${password}
@@ -47,7 +47,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     [Teardown]                          Finish TC
 
 1.1.3 - Valid Username and Blank Password Textbox
-    Open Saucedemo URL
+    [Setup]                             Open Saucedemo URL
     Wait Until Element Is Visible       ${UserNameTxt}
     Input Text                          ${UserNameTxt}          IDontExist
     Click button                        ${LoginBtn}
@@ -58,7 +58,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     [Teardown]                          Finish TC
 
 1.1.4 - Valid User and Wrong Password
-    Open Saucedemo URL
+    [Setup]                             Open Saucedemo URL
     Wait Until Element Is Visible       ${UserNameTxt}
     Input Text                          ${UserNameTxt}          ${standarduser}
     Input Text                          ${PasswordTxt}          WrongPassword
@@ -70,7 +70,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     [Teardown]                          Finish TC
 
 1.1.5 - Try to login with Lockedout User 
-    Open Saucedemo URL
+    [Setup]                             Open Saucedemo URL
     Wait Until Element Is Visible       ${UserNameTxt}
     Input Text                          ${UserNameTxt}          ${lockedoutuser}
     Input Text                          ${PasswordTxt}          ${password}
@@ -82,7 +82,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     [Teardown]                          Finish TC
 
 1.1.6 - Example running Headless
-    Go in Headless Firefox
+    [Setup]                             Go in Headless Firefox
     Wait Until Element Is Visible       ${UserNameTxt}
     Input Text                          ${UserNameTxt}          ${standarduser}
     Input Text                          ${PasswordTxt}          ${password}
@@ -93,7 +93,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     [Teardown]                          Finish TC
 
 1.1.7 - Example using Arguments - Blank Username
-    Open Saucedemo URL
+    [Setup]                             Open Saucedemo URL
     ExampleArguments                    ${Empty}           ${password}
     Wait Until Element Is Visible       ${ErrorLoginMessage}  
     Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username is required
@@ -102,7 +102,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     [Teardown]                          Finish TC
 
 2.1.1 - Add product to Cart and finish with positive Purchase flow
-    Valid Login
+    [Setup]                             Valid Login
     Wait Until Element Is Visible       ${fristProductAddBtn}     
     Click button                        ${fristProductAddBtn}
     #Next 3 lines is to validate if the Cart Icon updates the amount after adding a product to the cart
