@@ -4,7 +4,7 @@ Library             BuiltIn
 Library             SeleniumLibrary
 
 *** Variables ***
-${Browser}          Chrome
+${Browser}          Firefox
 
 ${URL_Saucedemo_DEV}            https://www.saucedemoDev.com/            #Example URL - That URL doesn't exist
 ${URL_Saucedemo_QA}             https://www.saucedemo.com/               

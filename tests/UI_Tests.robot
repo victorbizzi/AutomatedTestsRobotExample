@@ -80,8 +80,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Finish TC
 
 1.1.6 - Example running Headless
-    Go in Headless
-    Maximize Browser Window
+    Go in Headless Firefox
     Wait Until Element Is Visible       ${UserNameTxt}
     Input Text                          ${UserNameTxt}          ${standarduser}
     Input Text                          ${PasswordTxt}          ${password}

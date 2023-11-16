@@ -1,0 +1,55 @@
+1700130279769	geckodriver	INFO	Listening on 127.0.0.1:51591
+1700130282872	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "515 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1\\AppData\\Local\\Temp\\rust_mozprofiler97t2X"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700130283431	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700130283565	Marionette	INFO	Listening on port 51599
+WebDriver BiDi listening on ws://127.0.0.1:51592
+Read port: 51599
+1700130283882	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51592/devtools/browser/ceeb25d8-d679-42c6-b77e-ac0180ec0f52
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1700130287627	Marionette	INFO	Stopped listening on port 51599
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/UrlClassifierListManager.sys.mjs, line 720: TypeError: this.tablesData[table] is undefined
+1700130368311	geckodriver	INFO	Listening on 127.0.0.1:51986
+1700130371394	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "519 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1\\AppData\\Local\\Temp\\rust_mozprofile4YMRRC"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700130371848	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700130371936	Marionette	INFO	Listening on port 51994
+Read port: 51994
+WebDriver BiDi listening on ws://127.0.0.1:51987
+1700130372032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51987/devtools/browser/6072dfce-fe01-475a-aa05-5279bc6056a2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1700130375018	Marionette	INFO	Stopped listening on port 51994
+Dynamically enable window occlusion 1
+1700130511427	geckodriver	INFO	Listening on 127.0.0.1:52525
+1700130514506	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "525 ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\VICTOR~1\\AppData\\Local\\Temp\\rust_mozprofilePAZfGq"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700130514889	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1700130514976	Marionette	INFO	Listening on port 52533
+WebDriver BiDi listening on ws://127.0.0.1:52526
+Read port: 52533
+1700130515179	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52526/devtools/browser/9f77db10-9a6d-4361-a0da-1793971cfba3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1700130518392	Marionette	INFO	Stopped listening on port 52533
+Dynamically enable window occlusion 1

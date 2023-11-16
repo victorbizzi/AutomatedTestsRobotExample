@@ -32,10 +32,17 @@ Open Saucedemo URL
     Open Browser         ${URL_SauceDemo_QA}        ${Browser}
     Maximize Browser Window
 
-Go in Headless
+Go in Headless Chrome
     ${options}      Evaluate        sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${options}    add_argument    --headless
     Create Webdriver    Chrome    chrome_options=${options}
+    Go To   ${URL_SauceDemo_QA}        
+    Maximize Browser Window
+
+Go in Headless Firefox
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].FirefoxOptions()    sys, selenium.webdriver
+    Call Method    ${options}    add_argument    --headless
+    Create Webdriver    Firefox    options=${options}
     Go To   ${URL_SauceDemo_QA}        
     Maximize Browser Window
 
