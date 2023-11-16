@@ -20,6 +20,8 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
 
 *** Comments ***
 
+*** Settings ***
+
 *** Test Cases ***
 1.1.1 - Valid Login
     Open Saucedemo URL
@@ -30,7 +32,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Wait Until Element Is Visible       ${SwagLabsLbl}  
     Element Text Should Be              ${SwagLabsLbl}          Swag Labs
     Element Text Should Be              ${ProducsSwagLabsLbl}          Products
-    Finish TC
+    [Teardown]                          Finish TC
 
 1.1.2 - Nonexistent Username
     Open Saucedemo URL
@@ -42,7 +44,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username and password do not match any user in this service
     Element Should Be Visible           ${XIconUser}
     Element Should Be Visible           ${XIconPassword}
-    Finish TC
+    [Teardown]                          Finish TC
 
 1.1.3 - Valid Username and Blank Password Textbox
     Open Saucedemo URL
@@ -53,7 +55,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Password is required
     Element Should Be Visible           ${XIconUser}
     Element Should Be Visible           ${XIconPassword}
-    Finish TC
+    [Teardown]                          Finish TC
 
 1.1.4 - Valid User and Wrong Password
     Open Saucedemo URL
@@ -65,7 +67,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username and password do not match any user in this service
     Element Should Be Visible           ${XIconUser}
     Element Should Be Visible           ${XIconPassword}
-    Finish TC
+    [Teardown]                          Finish TC
 
 1.1.5 - Try to login with Lockedout User 
     Open Saucedemo URL
@@ -77,7 +79,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Sorry, this user has been locked out.
     Element Should Be Visible           ${XIconUser}
     Element Should Be Visible           ${XIconPassword}
-    Finish TC
+    [Teardown]                          Finish TC
 
 1.1.6 - Example running Headless
     Go in Headless Firefox
@@ -88,7 +90,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Wait Until Element Is Visible       ${SwagLabsLbl}  
     Element Text Should Be              ${SwagLabsLbl}          Swag Labs
     Element Text Should Be              ${ProducsSwagLabsLbl}          Products
-    Finish TC
+    [Teardown]                          Finish TC
 
 1.1.7 - Example using Arguments - Blank Username
     Open Saucedemo URL
@@ -97,7 +99,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username is required
     Element Should Be Visible           ${XIconUser}
     Element Should Be Visible           ${XIconPassword}
-    Finish TC
+    [Teardown]                          Finish TC
 
 2.1.1 - Add product to Cart and finish with positive Purchase flow
     Valid Login
@@ -125,8 +127,7 @@ Resource            ../pageobjects/CheckoutCompletedPagePO.robot
     END 
     Click Element                        ${FinishCheckoutBtn}     
     Validate Checkout Successfully
-    Finish TC
-
+    [Teardown]                          Finish TC
 
 
    
