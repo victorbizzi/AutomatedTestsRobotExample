@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 6.0.2 (Python 3.11.3 on win32)" name="Generator">
+<meta content="Robot Framework 6.1.1 (Python 3.11.3 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
 <style media="all" type="text/css">
 /* Generic and misc styles */
@@ -1150,7 +1150,7 @@ window.testdata = function () {
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
     var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
-                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK'];
+                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1629,7 +1629,7 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,90264],[[4,5,6,0,[],[1,34,90227],[[7,8,9,10,[],[1,38,90218],[],[[11,0,0,[],[1,443,11297],[]],[12,0,0,[],[1,11743,11158],[]],[13,0,0,[],[1,22903,10292],[]],[14,0,0,[],[1,33197,10986],[]],[15,0,0,[],[1,44185,11241],[]],[16,0,0,[],[1,55428,10031],[]],[17,0,0,[],[1,65460,11727],[]],[18,0,0,[],[1,77189,13063],[]]],[],[8,8,0,0]]],[],[],[8,8,0,0]]],[],[],[8,8,0,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,100564],[[4,5,6,0,[],[1,41,100519],[[7,8,9,10,[],[1,46,100510],[],[[11,0,0,[],[1,413,12304],[]],[12,0,0,[],[1,12720,12107],[]],[13,0,0,[],[1,24829,12620],[]],[14,0,0,[],[1,37454,12524],[]],[15,0,0,[],[1,49981,13308],[]],[16,0,0,[],[1,63293,10898],[]],[17,0,0,[],[1,74194,12344],[]],[18,0,0,[],[1,86541,14012],[]]],[],[8,8,0,0]]],[],[],[8,8,0,0]]],[],[],[8,8,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
@@ -1638,13 +1638,13 @@ window.output["strings"] = [];
 window.output["strings"] = window.output["strings"].concat(["*","*AutomatedTestsRobotExample","*C:\\Users\\VictorMelo\\asd\\AutomatedTestsRobotExample","*..","*Tests","*C:\\Users\\VictorMelo\\asd\\AutomatedTestsRobotExample\\tests","*../tests","*UI Tests","*C:\\Users\\VictorMelo\\asd\\AutomatedTestsRobotExample\\tests\\UI_Tests.robot","*../tests/UI_Tests.robot","*<p>Executable file for UI Regression Testing\x3c/p>","*1.1.1 - Valid Login","*1.1.2 - Nonexistent Username","*1.1.3 - Valid Username and Blank Password Textbox","*1.1.4 - Valid User and Wrong Password","*1.1.5 - Try to login with Lockedout User","*1.1.6 - Example running Headless","*1.1.7 - Example using Arguments - Blank Username","*2.1.1 - Add product to Cart and finish with positive Purchase flow"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:01:30","fail":0,"label":"All Tests","pass":8,"skip":0}],[],[{"elapsed":"00:01:30","fail":0,"id":"s1","label":"AutomatedTestsRobotExample","name":"AutomatedTestsRobotExample","pass":8,"skip":0},{"elapsed":"00:01:30","fail":0,"id":"s1-s1","label":"AutomatedTestsRobotExample.Tests","name":"Tests","pass":8,"skip":0},{"elapsed":"00:01:30","fail":0,"id":"s1-s1-s1","label":"AutomatedTestsRobotExample.Tests.UI Tests","name":"UI Tests","pass":8,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:01:40","fail":0,"label":"All Tests","pass":8,"skip":0}],[],[{"elapsed":"00:01:41","fail":0,"id":"s1","label":"AutomatedTestsRobotExample","name":"AutomatedTestsRobotExample","pass":8,"skip":0},{"elapsed":"00:01:41","fail":0,"id":"s1-s1","label":"AutomatedTestsRobotExample.Tests","name":"Tests","pass":8,"skip":0},{"elapsed":"00:01:41","fail":0,"id":"s1-s1-s1","label":"AutomatedTestsRobotExample.Tests.UI Tests","name":"UI Tests","pass":8,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1700135134672;
+window.output["baseMillis"] = 1700216434764;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 90283;
+window.output["generated"] = 100589;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -1894,8 +1894,8 @@ function searchTests(suitePattern, testPattern, includePattern, excludePattern) 
 function scrollToSelector(base, query) {
     $('#test-details-container').css('min-height', $(window).height());
     var anchor = query ? base + '?' + encodeURIComponent(query) : base;
-    window.location.hash = '';
     window.location.hash = window.prevLocationHash = anchor;
+    document.getElementById('test-details-container').scrollIntoView();
 }
 
 function renderSelector(args, template, stats) {

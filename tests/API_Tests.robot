@@ -13,7 +13,6 @@ Resource            ../settings/Endpoints.robot
 
 *** Variables ***
 
-
 *** Comments ***
 The following tests do not work. I created the steps just to show how I develop the automated API tests.
 The context is: in the UI, when the user inserts the username and password, the following screen displays a '2-factor authentication' 

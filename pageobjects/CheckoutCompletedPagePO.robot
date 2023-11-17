@@ -4,7 +4,6 @@ Library             BuiltIn
 Library             SeleniumLibrary
 Library             DateTime
 
-
 *** Variables ***
 ${PageTitleCompleteLbl}             css:.title
 ${MainMessageLbl}           //h2

@@ -1,20 +1,12 @@
 *** Settings ***
 Documentation       Executable file for UI Regression Testing
-Library             BuiltIn
-Library             SeleniumLibrary
-Library             OperatingSystem
-Library             DateTime
-Library             RequestsLibrary
-Library             JSONLibrary
-Library             String
 Resource            ../settings/UserAccess.robot
 Resource            ../pageobjects/LoginPagePO.robot
-Resource            ../settings/Environments.robot
-Resource            ../settings/Keywords.robot
 Resource            ../pageobjects/HomePagePO.robot
 Resource            ../pageobjects/CartPagePO.robot
 Resource            ../pageobjects/CheckoutPagePO.robot
 Resource            ../pageobjects/CheckoutCompletedPagePO.robot
+Resource            ../pageobjects/BrowserResources.robot
 Test Teardown       Finish TC
 #Test Setup          Open Saucedemo URL
 
@@ -24,75 +16,25 @@ Test Teardown       Finish TC
 
 *** Test Cases ***
 1.1.1 - Valid Login
-    [Setup]                             Open Saucedemo URL
-    Wait Until Element Is Visible       ${UserNameTxt}
-    Input Text                          ${UserNameTxt}          ${standarduser}
-    Input Text                          ${PasswordTxt}          ${password}
-    Click button                        ${LoginBtn}
-    Wait Until Element Is Visible       ${SwagLabsLbl}  
-    Element Text Should Be              ${SwagLabsLbl}          Swag Labs
-    Element Text Should Be              ${ProducsSwagLabsLbl}          Products
+    Valid Login
 
 1.1.2 - Nonexistent Username
-    [Setup]                             Open Saucedemo URL
-    Wait Until Element Is Visible       ${UserNameTxt}
-    Input Text                          ${UserNameTxt}          IDontExist
-    Input Text                          ${PasswordTxt}          ${password}
-    Click button                        ${LoginBtn}
-    Wait Until Element Is Visible       ${ErrorLoginMessage}  
-    Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username and password do not match any user in this service
-    Element Should Be Visible           ${XIconUser}
-    Element Should Be Visible           ${XIconPassword}
+    Nonexistent Username
 
 1.1.3 - Valid Username and Blank Password Textbox
-    [Setup]                             Open Saucedemo URL
-    Wait Until Element Is Visible       ${UserNameTxt}
-    Input Text                          ${UserNameTxt}          IDontExist
-    Click button                        ${LoginBtn}
-    Wait Until Element Is Visible       ${ErrorLoginMessage}  
-    Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Password is required
-    Element Should Be Visible           ${XIconUser}
-    Element Should Be Visible           ${XIconPassword}
+    Valid Username and Blank Password in Textbox
 
 1.1.4 - Valid User and Wrong Password
-    [Setup]                             Open Saucedemo URL
-    Wait Until Element Is Visible       ${UserNameTxt}
-    Input Text                          ${UserNameTxt}          ${standarduser}
-    Input Text                          ${PasswordTxt}          WrongPassword
-    Click button                        ${LoginBtn}
-    Wait Until Element Is Visible       ${ErrorLoginMessage}  
-    Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username and password do not match any user in this service
-    Element Should Be Visible           ${XIconUser}
-    Element Should Be Visible           ${XIconPassword}
+    Valid User and using Wrong Password
 
 1.1.5 - Try to login with Lockedout User 
-    [Setup]                             Open Saucedemo URL
-    Wait Until Element Is Visible       ${UserNameTxt}
-    Input Text                          ${UserNameTxt}          ${lockedoutuser}
-    Input Text                          ${PasswordTxt}          ${password}
-    Click button                        ${LoginBtn}
-    Wait Until Element Is Visible       ${ErrorLoginMessage}  
-    Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Sorry, this user has been locked out.
-    Element Should Be Visible           ${XIconUser}
-    Element Should Be Visible           ${XIconPassword}
+    Login with Lockedout User 
 
 1.1.6 - Example running Headless
-    [Setup]                             Go in Headless Firefox
-    Wait Until Element Is Visible       ${UserNameTxt}
-    Input Text                          ${UserNameTxt}          ${standarduser}
-    Input Text                          ${PasswordTxt}          ${password}
-    Click button                        ${LoginBtn}
-    Wait Until Element Is Visible       ${SwagLabsLbl}  
-    Element Text Should Be              ${SwagLabsLbl}          Swag Labs
-    Element Text Should Be              ${ProducsSwagLabsLbl}          Products
+    Valid Login in Headless
 
 1.1.7 - Example using Arguments - Blank Username
-    [Setup]                             Open Saucedemo URL
-    ExampleArguments                    ${Empty}           ${password}
-    Wait Until Element Is Visible       ${ErrorLoginMessage}  
-    Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username is required
-    Element Should Be Visible           ${XIconUser}
-    Element Should Be Visible           ${XIconPassword}
+    Example Arguments: Blank Username
 
 2.1.1 - Add product to Cart and finish with positive Purchase flow
     [Setup]                             Valid Login
