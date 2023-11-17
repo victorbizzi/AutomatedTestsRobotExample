@@ -25,6 +25,7 @@ Validate if Cart Icon updates the amount after adding a product to the cart
     Run Keyword And Expect Error    FAIL    Text should be equal "1" but was "${cart}"
     END    
     ${ProductName} =                     Get Text        ${ProductNameLbl}
+    Set Test Variable  ${ProductName}
 
 Go To Cart Btn
     Wait Until Element Is Visible        ${cartBtn}

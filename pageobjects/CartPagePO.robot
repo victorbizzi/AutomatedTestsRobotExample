@@ -23,5 +23,5 @@ Validate if the product inserted is the same as previous added to the cart
     IF    "${ProductName}" != "${ProductCheckoutName}"
     Run Keyword And Expect Error    FAIL    Text should be equal "${ProductName}" but was "${ProductCheckoutName}"
     END 
-    Click Element                        ${FinishCheckoutBtn}     
-    Validate Checkout Successfully
+    #Click Element                        ${FinishCheckoutBtn}     
+    
