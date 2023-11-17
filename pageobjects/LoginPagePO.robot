@@ -13,7 +13,6 @@ ${XIconUser}                css:.form_group:nth-child(1) path
 ${XIconPassword}            css:.form_group:nth-child(2) path
 
 *** Keywords ***
-
 Valid Login
     Open Saucedemo URL
     Wait Until Element Is Visible       ${UserNameTxt}
@@ -84,12 +83,6 @@ Example Arguments: Blank Username
     Element Text Should Be              ${ErrorLoginMessage}          Epic sadface: Username is required
     Element Should Be Visible           ${XIconUser}
     Element Should Be Visible           ${XIconPassword}
-
-Validate Checkout Successfully
-    Wait Until Element Is Visible       ${PageTitleCompleteLbl}
-    Element Text Should Be              ${PageTitleCompleteLbl}          Checkout: Complete!   
-    Element Text Should Be              ${MainMessageLbl}        Thank you for your order!
-    Element Text Should Be              ${CompleteMessageLbl}    Your order has been dispatched, and will arrive just as fast as the pony can get there!
 
 Click In Login button
     Click button                        ${LoginBtn}

@@ -38,29 +38,27 @@ Test Teardown       Finish TC
 
 2.1.1 - Add product to Cart and finish with positive Purchase flow
     [Setup]                             Valid Login
-    Wait Until Element Is Visible       ${fristProductAddBtn}     
-    Click button                        ${fristProductAddBtn}
+    Select First Product
+    #Validate if Cart Icon updates the amount after adding a product to the cart
     #Next 3 lines is to validate if the Cart Icon updates the amount after adding a product to the cart
     ${cart} =                     Get Text        ${cartItemLbl}
     IF    "${cart}" != "1"
     Run Keyword And Expect Error    FAIL    Text should be equal "1" but was "${cart}"
     END    
     ${ProductName} =                     Get Text        ${ProductNameLbl}
-    Click Element                        ${cartBtn}
-    Element Text Should Be               ${YourCartLbl}                 Your Cart
-    Click Element                        ${CheckoutBtn}
-    Wait Until Element Is Visible        ${CheckoutYourInfoLbl} 
-    Element Text Should Be               ${CheckoutYourInfoLbl}         Checkout: Your Information
-    Input Text                           ${FirstNameTxt}                Username
-    Input Text                           ${LastNametxt}                 UserSurname    
-    Input Text                           ${ZipPCTxt}                    123456
-    Click Element                        ${ContinueBtn}        
-    Wait Until Element Is Visible        ${CheckoutYourInfoLbl}
+    
+    Go To Cart Btn
+    
+    Validate If Cart Page is Loaded
+    Click in Checkout button
+    Validate If Checkout Page is Loaded
+    Fill Checkout Information
+    #Validate if the product inserted is the same as previous added to the cart
     ${ProductCheckoutName} =                     Get Text        ${ProductNameCheckout}
     IF    "${ProductName}" != "${ProductCheckoutName}"
     Run Keyword And Expect Error    FAIL    Text should be equal "${ProductName}" but was "${ProductCheckoutName}"
     END 
-    Click Element                        ${FinishCheckoutBtn}     
+    Click in Finish Checkout     
     Validate Checkout Successfully
 
 
